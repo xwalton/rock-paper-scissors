@@ -1,9 +1,3 @@
-
-
-
-
-
-
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
@@ -18,6 +12,10 @@ function getComputerChoice() {
 
 function playRound() {
     let playerSelection = prompt.toLowerCase("Do you choose rock, paper, or scissors?");
+    function playRound() {
+        let playerSelection = prompt("Do you choose rock, paper, or scissors?").toLowerCase();
+        let computerSelection = getComputerChoice();
+    }
     let playerScore = 0;
     let computerScore = 0;
     switch (playerSelection) {
