@@ -73,17 +73,6 @@ function game() {
     console.log(playRound());
     playRound();
     console.log(playRound());
-    let computerScore = 0;
-    let playerScore = 0;
-    for (let i = 0; i < 5; i++) {
-        let result = playRound();
-        console.log(result);
-        if (result.includes("win")) {
-            playerScore++;
-        } else if (result.includes("lose")) {
-            computerScore++;
-        }
-    }
     if (computerScore > playerScore) {
         console.log("Computer wins!");
     } else if (computerScore < playerScore) {
