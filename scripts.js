@@ -11,11 +11,8 @@ function getComputerChoice() {
 }
 
 function playRound() {
-    let playerSelection = prompt.toLowerCase("Do you choose rock, paper, or scissors?");
-    function playRound() {
-        let playerSelection = prompt("Do you choose rock, paper, or scissors?").toLowerCase();
-        let computerSelection = getComputerChoice();
-    }
+    let playerSelection = prompt("Do you choose rock, paper, or scissors?").toLowerCase();
+    let computerSelection = getComputerChoice();
     let playerScore = 0;
     let computerScore = 0;
     switch (playerSelection) {
@@ -59,17 +56,11 @@ function playRound() {
     }
 
 function game() {
-    playRound();
     console.log(playRound());
-    playRound();
     console.log(playRound());
-    playRound();
     console.log(playRound());
-    playRound();
     console.log(playRound());
-    playRound();
     console.log(playRound());
-    playRound();
     console.log(playRound());
     if (computerScore > playerScore) {
         console.log("Computer wins!");
