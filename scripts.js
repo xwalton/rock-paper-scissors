@@ -22,12 +22,16 @@ let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
         if (playerSelection === computerSelection) {
+            playerScore++;
+            computerScore++;
             return 'It\'s a tie!';
         }
         if (playerSelection === 'rock') {
             if (computerSelection === 'paper') {
+                computerScore++;
                 return 'You lose! Paper beats rock.';
             } else {
+                playerScore++;
                 return 'You win! Rock beats scissors.';
             }
         }
